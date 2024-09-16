@@ -3,7 +3,14 @@
 
 <h1 align=center>Flowchart</h1>
 
+![Chart 1](https://github.com/user-attachments/assets/015cfb90-956f-4c4c-bc88-d16e3ba54931)
+
+
 <h1 align=center>IPO Chart</h1>
+
+![IPO 1](https://github.com/user-attachments/assets/8c3e178c-f36c-4c38-bf88-72cf2693dd75)
+
+
 
 <h1 align=center>Pseudo Code</h1>
 
