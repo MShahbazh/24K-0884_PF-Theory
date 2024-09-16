@@ -33,17 +33,17 @@
  				PRINT “legal to marry”
 			END IF 
 
-    a. <b>IF</b> age is less than 18, 
+    a. IF age is less than 18, 
 
-     	<b>PRINT</b> “illegal to marry”
+     	PRINT “illegal to marry”
 
-    b. <b>ELSE</b>
+    b. ELSE
 
-    	<b>PRINT</b> “legal to marry”
+    	PRINT “legal to marry”
 
-    c. <b>END IF</b>
+    c. END IF
 
-5.	<b>ELSE IF</b> Province is Punjab
+5.	ELSE IF Province is Punjab
 		IF the gender is boy, 
 			IF the age is less than 18, 
 				THEN, PRINT “illegal to marry”
