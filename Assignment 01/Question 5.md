@@ -13,13 +13,13 @@
 2.	INPUT croptype, Moisture, Rainfall
 
 3.	IF croptype==wheat AND Moisture<30% AND Rainfall >24 THEN 
-        PRINT “Initiate Irrigation”
+                PRINT “Initiate Irrigation”
 
 4.	ELSE IF croptype==wheat AND Moisture<25% AND Rainfall>24 THEN 
-        PRINT “Initiate Irrigation”
+                PRINT “Initiate Irrigation”
 
 5.	ELSE IF croptype==corn AND Moisture<40% 
-        PRINT “Initiate Irrigation” 
+                PRINT “Initiate Irrigation” 
 
 6.	END IF 
 
