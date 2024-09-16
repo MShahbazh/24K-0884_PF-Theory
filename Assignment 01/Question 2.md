@@ -19,13 +19,13 @@
 2.	INPUT  y 
 
 3.	IF y<=0, THEN 
-        PRINT “Invalid Output”
+                PRINT “Invalid Output”
         
 4.	ELSE IF y%2==0 THEN
-        PRINT “It is an even number”
+                PRINT “It is an even number”
 
 5.	ELSE 
-        PRINT “It is an odd number”
+                PRINT “It is an odd number”
 
 6.	END IF
 
