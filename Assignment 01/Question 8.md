@@ -3,7 +3,13 @@
 
 <h1 align=center>Flowchart</h1>
 
+![Chart 8 ](https://github.com/user-attachments/assets/f39cd7f6-28f7-43cb-ad26-85a19fceab0d)
+
+
 <h1 align=center>IPO Chart</h1>
+
+![IPO 8](https://github.com/user-attachments/assets/3ac8f470-1756-493a-bf33-d9901d3f8aa3)
+
 
 <h1 align=center>Pseudo Code</h1>
 
@@ -15,9 +21,9 @@
 3.	SET i to 0 
 
 4.	WHILE (n!=0)
-        SET x to n%10
-        SET i to i+x 
-        SET n to n/10 
+                SET x to n%10
+                SET i to i+x 
+                SET n to n/10 
 5.	END WHILE
 
 6.	PRINT i
