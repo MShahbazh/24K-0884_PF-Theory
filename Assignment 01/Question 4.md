@@ -3,7 +3,16 @@
 
 <h1 align=center>Flowchart</h1>
 
+![Chart 4a](https://github.com/user-attachments/assets/79251bc3-801f-40bd-8635-b91a42a19a79)
+
+![Chart 4b](https://github.com/user-attachments/assets/6f9a7926-96a5-4c83-9199-7f2d0632fdcb)
+
+
+
 <h1 align=center>IPO Chart</h1>
+
+![IPO 4](https://github.com/user-attachments/assets/75867a01-ff4b-4653-a3e0-148699cb8723)
+
 
 <h1 align=center>Pseudo Code</h1>
 
@@ -15,41 +24,41 @@
 3.	SET bill to 0
 
 4.	IF buy onion 
-        INPUT the rate (per kg)
-        INPUT the amount to buy (in kg) 
-        SET price=amount*rate
-        SET bill=bill+price
+                INPUT the rate (per kg)
+                INPUT the amount to buy (in kg) 
+                SET price=amount*rate
+                SET bill=bill+price
 5.	END IF 
 
 6.	IF buy apricot 
-        INPUT the rate (per kg)
-        INPUT the amount to buy (in kg) 
-        SET price=amount*rate
-        SET bill=bill+price
+                INPUT the rate (per kg)
+                INPUT the amount to buy (in kg) 
+                SET price=amount*rate
+                SET bill=bill+price
 7.	END IF 
 
 8.	IF buy grapes
-        INPUT the rate (per kg)
-        INPUT the amount to buy (in kg) 
-        SET price=amount*rate
-        SET bill=bill+price
+                INPUT the rate (per kg)
+                INPUT the amount to buy (in kg) 
+                SET price=amount*rate
+                SET bill=bill+price
 9.	END IF 
 
 10.	IF buy tomatoes 
-        INPUT the rate (per kg)
-        INPUT the amount to buy (in kg) 
-        SET price=amount*rate
-        SET bill=bill+price
+                INPUT the rate (per kg)
+                INPUT the amount to buy (in kg) 
+                SET price=amount*rate
+                SET bill=bill+price
 11.	END IF 
 
 12.	IF bill is greater than equal to money
-        SET diff to money-price
-            IF diff!=0
-                OUTPUT give back diff 
-            END IF 
+                SET diff to money-price
+                    IF diff!=0
+                        OUTPUT give back diff 
+                    END IF 
 13.	ELSE 
-     PRINT “Not enough money to buy the groceries”
-14.	END IF 
+             PRINT “Not enough money to buy the groceries”
+14.     END IF 
 
 15.	END 
 
