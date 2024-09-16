@@ -3,7 +3,13 @@
 
 <h1 align=center>Flowchart</h1>
 
+![Chart 11](https://github.com/user-attachments/assets/ebf268b4-7b0c-4fbd-8bd8-31dbda6951cf)
+
+
 <h1 align=center>IPO Chart</h1>
+
+![IPO 11](https://github.com/user-attachments/assets/4e32064f-da09-43f5-bb37-a9d35346eb36)
+
 
 <h1 align=center>Pseudo Code</h1>
 
@@ -13,19 +19,19 @@
 2.	INPUT x,y
 
 3.	WHILE (x!=y)
-        IF (x>y) 
-            SET x to x-y
-        ELSE 
-            SET y=y-x
-        END IF 
+                IF (x>y) 
+                    SET x to x-y
+                ELSE 
+                    SET y=y-x
+                END IF 
 4.	END WHILE
 
 5.	SET HCF=x
 
 6.	IF (HCF==1)
-        PRINT “The numbers are co prime”
+                PRINT “The numbers are co prime”
 7.	ELSE 
-        PRINT “The numbers are not co prime”
+                PRINT “The numbers are not co prime”
 8.	END IF
 
 9.	END 
