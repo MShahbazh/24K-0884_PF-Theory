@@ -19,7 +19,7 @@
 <h1 align=center>Pseudo Code</h1>
 
 ```
-1.	START
+1. START
 
 2.  INPUT Province, age, gender 
 
@@ -78,6 +78,3 @@
 <h1 align=center>Approach</h1>
 
 The Problem is to check the legal age for marrying in Sindh and Punjab and display the result to the user according to the information provided such as age, gender, Province. In Sindh the legal age was 18 for both girls and boys so only one decision box was needed, while in Punjab, it is 18 for boys and 16 for girls therefore more than one decision box was needed. 
-=======
-<h1 align=center>Approach</h1>
->>>>>>> 1c0eceee84e75989afdf7d2975f5d9a35dc51afd
