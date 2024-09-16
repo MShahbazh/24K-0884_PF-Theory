@@ -7,4 +7,8 @@
 
 <h1 align=center>Pseudo Code</h1>
 
+```
+
+```
+
 <h1 align=center>Approach</h1>

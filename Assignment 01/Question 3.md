@@ -7,34 +7,41 @@
 
 <h1 align=center>Pseudo Code</h1>
 
-1.	<b>START</b> 
+```
+1.	START
 
-2.	<b>INPUT</b> Province, age, gender 
+2.  INPUT Province, age, gender 
 
-4.	<b>IF</b> Province is Sindh 
+3.	IF Province is Sindh 
+		IF age is less than 18, 
+			PRINT “illegal to marry”
+		ELSE 
+			PRINT “legal to marry”
+		END IF
 
-    <b>IF</b> age is less than 18, 
-<b>PRINT</b> “illegal to marry”
-<b>ELSE</b>
-PRINT “legal to marry”
-END IF
-5.	ELSE IF Province is Punjab
-IF the gender is boy, 
-	IF the age is less than 18, 
-		THEN, PRINT “illegal to marry”
-ELSE 
-PRINT “legal to marry” 
-END IF 
-ELSE 
-IF the age is less than 16, 
-		THEN, PRINT “illegal to marry”
-ELSE 
- PRINT “legal to marry”
-END IF 
-6.	ELSE 
-PRINT “Enter valid province name” 
-7.	END IF
+4.	ELSE IF Province is Punjab
+		IF the gender is boy, 
+			IF the age is less than 18, 
+				THEN, PRINT “illegal to marry”
+			ELSE 
+				PRINT “legal to marry” 
+			END IF 
+		ELSE 
+			IF the age is less than 16, 
+				THEN, PRINT “illegal to marry”
+			ELSE 
+ 				PRINT “legal to marry”
+			END IF 
 
-8.	END
+5.	ELSE 
+		PRINT “Enter valid province name” 
+
+6.	END IF
+
+7.	END
+
+```
 
 <h1 align=center>Approach</h1>
+
+The Problem is to check the legal age for marrying in Sindh and Punjab and display the result to the user according to the information provided such as age, gender, Province. In Sindh the legal age was 18 for both girls and boys so only one decision box was needed, while in Punjab, it is 18 for boys and 16 for girls therefore more than one decision box was needed. 

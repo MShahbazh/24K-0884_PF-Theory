@@ -7,15 +7,23 @@
 
 <h1 align=center>Pseudo Code</h1>
 
-1.<b>START</b>
+```
+1.	START
 
-2.<b>INPUT</b> kms
+2.	INPUT 
+        Input kms 
 
-3.<b>PROCESS</b> mph=kms*2250 
+3.	PROCESS
+        mph=kms*2250
 
-4.<b>OUTPUT</b> mph 
+4.	OUTPUT
+        output mph 
 
-5.<b>END</b>
+5.	END
+
+
+
+```
 
 <h1 align=center>Approach</h1>
 The problem was to convert kilometers per second to miles per hour. Therefore, to solve this we need to find relation between mph and kms. 
