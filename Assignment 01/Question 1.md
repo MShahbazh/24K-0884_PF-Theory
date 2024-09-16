@@ -18,13 +18,13 @@
 1.	START
 
 2.	INPUT 
-        Input kms 
+                Input kms 
 
 3.	PROCESS
-        mph=kms*2250
+                mph=kms*2250
 
 4.	OUTPUT
-        output mph 
+                output mph 
 
 5.	END
 
