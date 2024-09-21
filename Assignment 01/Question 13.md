@@ -15,27 +15,29 @@
 
 ```
 1.	START 
+
 2.	INPUT x,y,z
 
 3.	IF z>x && z>y
-      PRINT “Cannot measure”
+            PRINT “Cannot measure”
 4.	ELSE IF z==x||z==y 
-      PRINT “Can be measured”
+            PRINT “Can be measured”
 5.	ELSE
-      WHILE x==y 
-        IF x>y 
-          SET x=x-y
-        ELSE 
-          SET y=y-x
-        END IF 
-      END WHILE 
-      SET HCF=x
-      IF z%HCF==0
-        PRINT “Can be measured”
-      ELSE 
-        PRINT “Cannot be measured”
-      END IF 
+            WHILE x==y 
+                    IF x>y 
+                        SET x=x-y
+                    ELSE 
+                        SET y=y-x
+                    END IF 
+            END WHILE 
+            SET HCF=x
+            IF z%HCF==0
+                    PRINT “Can be measured”
+            ELSE 
+                    PRINT “Cannot be measured”
+            END IF 
 6.	END IF 
+
 7.	END
 
 ```
