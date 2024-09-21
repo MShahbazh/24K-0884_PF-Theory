@@ -22,3 +22,4 @@
 
 
 <h1 align=center>Approach</h1>
+To check date validity, we considered all scenarios, including leap years. If valid, I subtracted the dates using the borrow method, covering all possible cases.
