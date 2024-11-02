@@ -1,39 +1,50 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
 int main(){
-int n;
-int prt=0;
-int len1=0,len2=0;
-printf("Enter the number of words: ");
-scanf("%d",&n);
-char arr[n][100];
-int i,j,k,l,inc=0;
-for(i=0;i<n;i++){
-	printf("Enter the %d word: ",i+1);
-	scanf("%s",arr[i]);
-}
-for(i=n-1;i>=0;i--){
-if(arr[i][0]!=' '){
-	len1=0;
-	while(arr[i][len1]!='\0')len1++;
-	printf("[%s",arr[i]);
-	for(j=i-1;j>=0;j--){
-		len2=0;
-	while(arr[j][len2]!='\0')len2++;
-		for(k=0;arr[i][k]!='\0';k++){
-			for(l=0;arr[j][l]!='\0';l++) if(arr[i][k]==arr[j][l]) break;
-			  if(arr[j][l]=='\0')  break;
-		    }    
-	        if(arr[i][k]=='\0' && len1==len2)	{
-	            printf(",%s",arr[j]);
-		        while(arr[j][inc]!='\0'){
-            		arr[j][inc]=' ';
-	            	inc++;
-				}
-				inc=0;
-            }						             
-    	}
-            printf("],");
+    int n;
+    printf("Enter the Number of words: ");
+    scanf("%d",&n);
+    char z[n][9999];
+    char v[9999];
+    char t[9999];
+   int i,j,k,g;
+    char x,y;
+    for(i=0;i<n;i++){
+        printf("Enter Word %d: ",i+1);
+        scanf("%s",&z[i][0]);
+    }
+    printf("\n");
+    printf("[");
+    for(g=0;g<n;g++){
+    strcpy(v,z[g]);
+    for(i=0;i<3;i++){
+        for(j=0;v[j+1]!='\0';j++){
+            if(v[j]>v[j+1]){
+                x=v[j+1];
+                v[j+1]=v[j];
+                v[j]=x;
+            }
         }
     }
-    return 0;
+  printf("[");
+    for(i=0;i<n;i++){
+        strcpy(t,z[i]);
+          for(k=0;k<3;k++){
+        for(j=0;t[j+1]!='\0';j++){
+            if(t[j]>t[j+1]){
+                x=t[j+1];
+                t[j+1]=t[j];
+                t[j]=x;
+            }
+        }
+    }
+        if(strcmp(v,t)==0){
+            printf("\"%s\"",z[i]);
+            printf(",");
+        }
+    }
+    printf("],");
+    }
+    printf("]");
+    return 0; 
 }
