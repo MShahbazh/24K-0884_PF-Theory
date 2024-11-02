@@ -16,16 +16,10 @@ scanf("%[A-Z a-z]",s);
           str[i]='a';
       }
       if(str[i]!='a'){
-      printf("%c",str[i]);
-          
+      printf("%c",str[i]);          
       }
-            }
-            
-        printf(" ");
-
-    
+            }            
+        printf(" ");   
 }
-           
-
     return 0;
 }
