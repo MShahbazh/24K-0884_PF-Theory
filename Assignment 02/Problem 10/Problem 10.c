@@ -1,100 +1,82 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int space , a , spaceinner , star , i , j , l;
+int main() {
+  int i,n,j,k,l,sp;
+  printf("Enter any number: ");
+  scanf("%d",&n);
+  int a=2*n-2;
+  for(l=0,k=0;l<a;l+=2,k++){
+      sp=0;
+      for(j=a-k;j>0;j--){
+          printf(" ");
+      }
+      for(i=0;i<=l;i++){
 
-    printf("Enter any number :");
-    scanf("%d", &a);
-
-    space = (a*2)-2;
-    spaceinner = 0;
-
-
-    for(i = 0; i <  a-1; i++){
-        for(j = 0; j < space; j++){
-            printf(" ");
-        }
-        printf("*");
-        for(l = 0; l < spaceinner; l++){
-            printf(" ");
-        }
-
-        if(l != 0)
-            printf("*");
-        
-
-        printf("\n");
-
-        space--;
-        if(i == 0)
-            spaceinner++;
-        else
-            spaceinner+=2;
-    }
-
-
-    for(i = 0 ;  i < a; i++){
-        printf("*");
-    }
-
-    for(i = 0;  i < spaceinner; i++){
+            if(i==0 || i==l){
+          printf("*");
+            }
+            else{
+                printf(" ");
+                sp++;
+            }
+          
+      }
+      printf("\n");
+  }
+  // bottom 
+for(i=0;i<n;i++){
+    printf("*");
+}
+for(i=0;i<sp+2;i++){
+    printf(" ");
+}
+for(i=0;i<n;i++){
+    printf("*");
+}
+printf("\n");
+// middle one
+for(j=0,k=n;j<a;j+=2,k--){
+    for(i=n-k+1;i>0;i--){
         printf(" ");
     }
-
-    for(i = 0 ;  i < a; i++){
-        printf("*");
+for(i=2*n+sp-j;i>0;i--){
+    if(i==2*n+sp-j||i==1){
+    printf("*");
+        
     }
-
-
+    else{
+        printf(" ");
+    }
+}
     printf("\n");
-    spaceinner = (spaceinner*2)-1;
-    space = 1;
-
-    for(i = 0; i < a-1;  i++){
-        for(j = 0; j  < space; j++){
-            printf(" ");
-        }
-        printf("*");
-        for(l = 0 ; l < spaceinner; l++){
-            printf(" ");
-        }
-        printf("*");
-        printf("\n");
-        spaceinner-=2;
-        space++;
-
+}
+// lower
+    int z=-1;
+    int v=-1;
+for(j=0,k=0;j<n-1;j++,k+=2){
+        z++;
+        v++;
+    for(i=n-2-j;i>0;i--){
+        printf(" ");
     }
+for(i=2*n+1+k;i>0;i--){
+    if(i==2*n+1+k||i==1){
+    printf("*");
+    }
+    else if(i==n-z&&j<n-2){
+        printf("*");
+    }
+    else if(i==n+2+k+v&&j<n-2){
+        printf("*");
+    }
+    else{
+        printf(" ");
+    }
+}
+printf("\n");
+}
+   
     
 
-    space = a-2;
-    spaceinner = 1;
-    for(i = 0; i < a-2; i++){
-        for(j = 0; j < space; j++){
-            printf(" ");
-        }
-        printf("*");
-        for(l = 0; l < space; l++){
-            printf(" ");
-        }
-        printf("*");
-        for(j = 0;  j < spaceinner; j++){
-            printf(" ");
-        }
-        printf("*");
-        for( j = 0; j < space; j++){
-            printf(" ");
-        }
-        printf("*");
-        printf("\n");
-        space --;
-        spaceinner+=4;
-
-    }
-    spaceinner+=2;
-    printf("*");
-    for(j = 0; j < spaceinner; j++){
-        printf(" ");
-    }
-    printf("*");
     return 0;
 }
