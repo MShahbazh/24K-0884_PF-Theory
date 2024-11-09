@@ -1,10 +1,10 @@
 #include <stdio.h>
-
 int main() {
-  int i,n,j,k,l,sp;
+  int i,n,j,k,l,sp,z=-1,v=-1,a;
   printf("Enter any number: ");
   scanf("%d",&n);
-  int a=2*n-2;
+  a=2*n-2;
+  // Top head
   for(l=0,k=0;l<a;l+=2,k++){
       sp=0;
       for(j=a-k;j>0;j--){
@@ -23,7 +23,7 @@ int main() {
       }
       printf("\n");
   }
-  // bottom 
+  // Top line
 for(i=0;i<n;i++){
     printf("*");
 }
@@ -34,7 +34,7 @@ for(i=0;i<n;i++){
     printf("*");
 }
 printf("\n");
-// middle one
+// Middle part
 for(j=0,k=n;j<a;j+=2,k--){
     for(i=n-k+1;i>0;i--){
         printf(" ");
@@ -50,9 +50,7 @@ for(i=2*n+sp-j;i>0;i--){
 }
     printf("\n");
 }
-// lower
-    int z=-1;
-    int v=-1;
+// lower part
 for(j=0,k=0;j<n-1;j++,k+=2){
         z++;
         v++;
@@ -75,8 +73,5 @@ for(i=2*n+1+k;i>0;i--){
 }
 printf("\n");
 }
-   
-    
-
     return 0;
 }
