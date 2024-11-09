@@ -38,12 +38,12 @@ int main() {
     }
       v=0;
   for(i=0;i<6;i++){
-       for(j=0;j<4;j++){
+       for(j=0;j<5;j++){
            str2[j]=s[i][j];
             str3[j]=s[j][i];
        }
-       str2[4]='\0';
-       str3[4]='\0';
+       str2[5]='\0';
+       str3[5]='\0';
     if(strstr(str2,str)!=NULL){
         Score++;
         printf("%s is present Horizontally. Score %d\n",str,Score);
