@@ -1,4 +1,5 @@
 <h1>Output Screenshots</h1>
+
 For n=3
 
 ![image](https://github.com/user-attachments/assets/dce2e18c-42c0-4f8c-8523-51f7638e4aaa)
