@@ -22,13 +22,14 @@ void print( char arr[6][5]){
   }
 }
 int main() {
-    int i,j,k,Score=0,v,m=1;
+    int i,j,k,Score,v,m=1;
     char s[6][5];
-    char str[4];
-    char str2[5];
-    char str3[5];
+    char str[6];
+    char str2[6];
+    char str3[6];
     print(s);
     do{
+        Score=0;
     do{
     printf("Enter the string: ");
     scanf("%s",&str);
@@ -47,11 +48,13 @@ int main() {
         Score++;
         printf("%s is present Horizontally. Score %d\n",str,Score);
         v++;
+        break;
     }
     else  if(strstr(str3,str)!=NULL){
         Score++;
         printf("%s is present Vertically. Score %d\n",str,Score);
         v++;
+        break;
     }
   }
     if(v==0){
