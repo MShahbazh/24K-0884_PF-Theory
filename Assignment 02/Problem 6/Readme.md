@@ -6,4 +6,6 @@
 
 ![image](https://github.com/user-attachments/assets/0abf1012-0a34-4aec-8dd0-e07960a16e15)
 
+![image](https://github.com/user-attachments/assets/3ec29962-456a-4c0a-8409-cff1f722aa2e)
+
 This Problem was not as difficult as the others. This Problem follows a pattern, the first players can't win the game if the number of matchsticks are divisible by 5. 
