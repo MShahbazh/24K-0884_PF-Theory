@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include<string.h>
+//Binary to Decimal Function
 int BinaryToDecimal(int a){
-
     int i,j,k=0,c=0,d,e;
-    // printf("Enter the Binary Number: ");
-    // scanf("%d",&a);
     d=a;
     while(d!=0){
         c++;
@@ -20,9 +18,9 @@ int BinaryToDecimal(int a){
    }
   return k;
 }
+// Decimal to Binary Function 
 int DecimalToBinary(int a){
        int i,d,c=1;
-
     d=a;
     for(;(d/2)!=0;){
         d=d/2;
@@ -38,17 +36,15 @@ int DecimalToBinary(int a){
             arr[i]=0;
         }
     }
+    printf("Binary Number: ");
     for(i=c-1;i>=0;i--){
         printf("%d",arr[i]);
     }
 }
+// Decimal to Hexadecimal Function 
 void DecimalToHexadecimal(int a){
        int i,j,k=0,c=0,d,e,y,temp;
      char str[9999];
-  
-
-   
- 
     for(i=0;i<c,a!=0;i++){
         y=a%16;
         if(y==0){
@@ -110,16 +106,14 @@ void DecimalToHexadecimal(int a){
       str2[i]=str[j];
   }
   str2[e+1]='\0';
+  printf("Hexadecimal Number: ");
   for(i=0;i<e;i++){
       printf("%c",str2[i]);
   }
-  
 }
+//Hexadecimal to Decimal  
 int HexadecimalToDecimal(char s[9999]){
-       int a;
-    
-   
-    int i,j,k,v=0,l,z;
+    int i,j,k,v=0,l,z,a;
     z=strlen(s);
     for(i=0;s[i]!='\0';i++){
     
@@ -177,9 +171,6 @@ int HexadecimalToDecimal(char s[9999]){
             printf("Invalid Input");
             return 0 ;
         }
-        
-        
-        
         l=1;
         for(j=z-1-i;j>0;j--){
             l=l*16;
@@ -188,38 +179,33 @@ int HexadecimalToDecimal(char s[9999]){
     }
     return v;
 }
+//Binary to Hexadecimal
 void BinaryToHexadecimal(int b){
     int f= BinaryToDecimal(b);
     DecimalToHexadecimal(f);
 
 }
+//Hexadecimal to Binary
 void HexadecimalToBinary(char s[9999]){
     int f=HexadecimalToDecimal(s);
     DecimalToBinary(f);
 }
-
-
-
 int main() {
     int n,a;
     char num[9999];
-    printf("1. Binary to Decimal\n2. Decimal to Binary\n3. Decimal to Hexadecimal\n4. Hexadecimal to Decimal\n5. Binary to Hexadecimal\n6. Hexadecimal to Binary");
-    printf("\n");
-    printf("Which Function you want to perform ?\n");
+    printf("1. Binary to Decimal\n2. Decimal to Binary\n3. Decimal to Hexadecimal\n4. Hexadecimal to Decimal\n5. Binary to Hexadecimal\n6. Hexadecimal to Binary\n");
+    printf("\nWhich Function you want to perform ?\n");
     printf("Enter the Corresponding Number: ");
     scanf("%d",&n);
     printf("\n");
     if(n==1){
         printf("Enter your Binary Number: ");
         scanf("%d",&a);
-BinaryToDecimal(a);
-
-    }
+        printf("Decimal Number: %d",BinaryToDecimal(a));    }
     else if(n==2){
           printf("Enter your Decimal Number: ");
         scanf("%d",&a);
     DecimalToBinary(a);
-
 }
 else if(n==3){
        printf("Enter your Decimal Number: ");
@@ -229,7 +215,7 @@ DecimalToHexadecimal(a);
 else if(n==4){
       printf("Enter your Hexadecimal Number: ");
         scanf("%s",&num);
-HexadecimalToDecimal(num);
+        printf("Decimal Number: %d",HexadecimalToDecimal(num));
 }
 else if(n==5){
     printf("Enter your Binary number: ");
@@ -244,9 +230,5 @@ else if(n==6){
 else {
     printf("Invalid Input");
 }
-
-
-
-
     return 0;
 }
