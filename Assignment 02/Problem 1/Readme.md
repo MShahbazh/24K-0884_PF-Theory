@@ -5,5 +5,5 @@
 ![image](https://github.com/user-attachments/assets/517a53f4-59e7-47f3-8db6-a0bf13bb8c7b)
 
 
-First I Bubble sorted the array and then printed the number at the index 1, which ws the second smallest in the array. 
+First I Bubble sorted the array and then printed the number at the index 1, which was the second smallest in the array. 
 There were also other methods to solve this problem, but implementing the sorting algorithm made this easier. 
