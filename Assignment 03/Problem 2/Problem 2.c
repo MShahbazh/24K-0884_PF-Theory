@@ -42,7 +42,7 @@ void displayMatchScoreboard(Player *player1, Player *player2){
     int i;
     float avg1,avg2;
     printf("\n");
-    printf("%-5s | %-5s | %-5s\n","Balls",player1->playername,player2->playername);
+    printf("%-10s | %-5s | %-10s\n","Balls",player1->playername,player2->playername);
     for(i=0;i<12;i++){
         printf("Ball %-5d | %-5d | %-5d\n",i+1,player1->ballScores[i],player2->ballScores[i]);
     }
