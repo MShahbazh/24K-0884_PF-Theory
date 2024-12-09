@@ -96,8 +96,8 @@ int main(){
         }
     }
     displayPerformance(ratings,n,p);
-    printf("Maximum of Average rating is of employee at index %d",findEmployeeOfTheYear(ratings,n,p));
-    printf("Highest of Average rating across all employee is at index %d",findHighestRatedPeriod(ratings,n,p));
+    printf("Maximum of Average rating is of employee at index %d\n",findEmployeeOfTheYear(ratings,n,p));
+    printf("Highest of Average rating across all employee is at index %d\n",findHighestRatedPeriod(ratings,n,p));
     printf("Worst Performing Employee is at index %d", findWorstPerformingEmployee(ratings,n,p));
 
 
