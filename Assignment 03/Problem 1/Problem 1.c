@@ -11,7 +11,7 @@ typedef struct employee{
 bool valid_date(int date,int month,int year){
     if(month>=1 && month<=12 && date>0){
 
-    if(month==1 || month==3 || month==7 || month==8 || month==10 || month==12){
+    if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12){
         if(date<=31)
         return true;
         else
@@ -102,14 +102,15 @@ float sub(int d,int m,int y,int date,int month,int year){
 
 int main() {
     int i,j=0,d,m,y,count=0,n;
-    int arr[1];
     float tenure;
     printf("Enter the number of employees: ");
     scanf("%d",&n);
+    int arr[100];
     employee employees[100];
     for(i=0;i<n;i++){
         assignvalues(&employees[i]);
     }
+    printf("\n");
     print(employees,n);
     while(j==0){
         printf("\nEnter Current date: ");
@@ -131,24 +132,19 @@ int main() {
         }
         else printf("Invalid Date\n");
     }
-    for(i=0,j=0;i<n;i++,j++){
+    count=0;
+    for(i=0,j=0;i<n;i++){
         tenure= sub(d,m,y,employees[i].date,employees[i].month,employees[i].year);
-
         if(tenure>3){
           arr[j]=i;
+          j++; 
           count++;
         }
-        
     }
     printf("\nThe Number of Employees with tenure greater than 3 are: %d",count);
-    printf("\n");
+    printf("\n\n");
     for(i=0;i<count;i++){
         printf("%-15d %-20s %d-%d-%d\n",employees[arr[i]].employeecode,employees[arr[i]].employeename,employees[arr[i]].date,employees[arr[i]].month,employees[arr[i]].year);
-    
     }
-
-    
-    
-    
     return 0;
 }
